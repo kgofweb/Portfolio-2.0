@@ -1,0 +1,40 @@
+.about {
+  &--img {
+    width: 200px;
+    align-self: center;
+    justify-self: center;
+    border-radius: .5rem;
+  }
+
+  &--description {
+    text-align: center;
+    margin-bottom: var(--mb-2-5);
+  }
+
+  &--info {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: var(--mb-2-5);
+
+    &-title {
+      font-size: var(--h2-font-size);
+      color: var(--title-color);
+      font-weight: var(--semi-bold-font);
+    }
+
+    &-name {
+      font-size: var(--smaller-font-size);
+    }
+
+    &-name,
+    &-title {
+      display: block;
+      text-align: center;
+    }
+  }
+
+  &--buttons {
+    display: flex;
+    justify-content: center;
+  }
+}

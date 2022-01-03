@@ -1,0 +1,98 @@
+.skills {
+  &--container {
+    row-gap: 0;
+  }
+
+  &--header {
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--mb-2-5);
+    cursor: pointer;
+  }
+
+  &--icon,
+  &--arrow {
+    font-size: 2rem;
+    color: var(--first-color);
+  }
+
+  &--icon {
+    margin-right: var(--mb-0-75);
+  }
+
+  &--title {
+    font-size: var(--h3-font-size);
+  }
+
+  &--subtitle {
+    font-size: var(--small-font-size);
+    color: var(--text-color-light);
+  }
+
+  &--arrow {
+    margin-left: auto;
+    transition: .4s;
+  }
+
+  &--titles {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: var(--mb-0-5);
+  }
+
+  &--name {
+    font-size: var(--normal-font-size);
+    font-weight: var(--medium-font);
+  }
+
+  &--bar,
+  &-percentage {
+    height: 5px;
+    border-radius: .25rem;
+  }
+
+  &--bar {
+    background-color: var(--first-color-lighter);
+  }
+
+  &-percentage {
+    display: block;
+    background-color: var(--first-color);
+  }
+
+  &--list {
+    row-gap: 1.5rem;
+    padding-left: 2.7rem;
+  }
+
+  &--html {
+    width: 90%;
+  }
+  &--css {
+    width: 88%;
+  }
+  &--javascript {
+    width: 85%;
+  }
+  &--react {
+    width: 80%;
+  }
+  &--next {
+    width: 75%;
+  }
+  &--node {
+    width: 75%;
+  }
+  &--firebase {
+    width: 85%;
+  }
+  &--python {
+    width: 50%;
+  }
+  &--figma {
+    width: 90%;
+  }
+  &--adobe {
+    width: 75%;
+  }
+}

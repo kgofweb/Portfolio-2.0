@@ -1,0 +1,76 @@
+.nav {
+  @extend %display;
+  max-width: 968px;
+  height: var(--header-height);
+
+  &--logo {
+    color: var(--title-color);
+    font-weight: var(--medium-font);
+
+    &:hover {
+      color: var(--first-color);
+    }
+  }
+
+  &--toggle {
+    font-size: 1.1rem;
+    cursor: pointer;
+
+    &:hover {
+      color: var(--first-color);
+    }
+  }
+
+  &--list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  &--link {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: var(--small-font-size);
+    color: var(--title-color);
+    font-weight: var(--medium-font);
+
+    &:hover {
+      color: var(--first-color);
+    }
+  }
+
+  &--icon {
+    font-size: 1.1rem;
+  }
+
+  &--close {
+    position: absolute;
+    right: 3.3rem;
+    bottom: .5rem;
+    font-size: 1.5rem;
+    color: var(--first-color);
+    cursor: pointer;
+
+    &:hover {
+      color: var(--first-color-alt);
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    &--menu {
+      position: fixed;
+      bottom: -100%;
+      left: 0;
+      width: 100%;
+      background-color: var(--body-color);
+      padding: 2rem 1.5rem 4rem;
+      box-shadow: 0 -1px 4px rgba(0,0,0, .15);
+      border-radius: 1.5rem 1.5rem 0 0;
+      transition: .5s;
+    }
+  }
+}
+
+.show-menu {
+  bottom: 0;
+}
