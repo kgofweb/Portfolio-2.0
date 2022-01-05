@@ -95,4 +95,18 @@
   &--adobe {
     width: 75%;
   }
+
+  &--close &--list {
+    height: 0;
+    overflow: hidden;
+  }
+
+  &--open &--list {
+    height: max-content;
+    margin-bottom: var(--mb-2-5);
+  }
+
+  &--open &--arrow {
+    transform: rotate(-180deg);
+  }
 }
