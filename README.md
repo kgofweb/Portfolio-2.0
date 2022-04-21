@@ -2,3 +2,8 @@
 website
 
 Portfolio development processuss...
+
+Technology used : 
+   HTML 
+   P.P SASS (CSS)
+   JAVASCRIPT
